@@ -1,0 +1,27 @@
+***CREATE TEST CASE:
+post request with userId, title, body
+
+1)check if all fields are filled and matches with request - expected code 200
+2)if information in fields invalid - expected code 404
+2)checking for complete match with an existing post - expected code 200
+3)add new post - expected code 201
+
+
+***UPDATE TEST CASE:
+
+put request with:
+userId, id - necessarily
+title or body - optional, what you want to change
+
+1)check if all fields are filled and matches with request - expected code 200, if some info in filed invalid code 404
+2)checking for complete match with an existing post - expected code 200
+2)else edit post - expected code 200
+
+
+***DELETE TEST CASE:
+
+delete request with id
+
+1)check valid value(id) - if invalid expected code 404 else expected code 200
+2)if post with value existing - delete post -  expected code 200
+3)if post not existing - expected code 200
